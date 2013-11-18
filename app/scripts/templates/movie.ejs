@@ -1,0 +1,14 @@
+     
+     <input value='<%= searchTerm  %>' id='searchbox'><button class="button"> Get Fillumz </button> 
+      </section>
+      <section id="movies">
+      <h2>Movies</h2>
+      <ul>
+      <% _.each(results, function(movie) { %>
+
+    	<li><a href='/#movie/<%= movie.imdb_id  %>/<%= searchTerm  %>'><img src='<%= movie.poster.imdb || "" %>'>
+    	<%= movie.title  %></a></li>
+		<% }); %> </ul>
+      </section>
+
+ 

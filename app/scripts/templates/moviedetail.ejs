@@ -1,0 +1,12 @@
+    <section id="details">
+ 		<h2>Details</h2>
+ 		<div><%= plot_simple  %></div>
+      </section>
+     <section id="actors">
+ 		<h2>Actors</h2>
+ 		<ul>
+      <% _.each(actors, function(actor) { %>
+
+    	<li><%= actor  %></li>
+		<% }); %> </ul>
+      </section>
