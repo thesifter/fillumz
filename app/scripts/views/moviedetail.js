@@ -18,8 +18,7 @@ define([
 		render: function(detail){ 
 			var html = this.template(detail);
 			$(this.el).html(html);
-			    // hack in here as events arent hooking up
-			    alert("hi")
+			    // hack in here as events arent hooking 
 			    $(".button").on("click", function(){
 			        console.log("click")
 			    })
